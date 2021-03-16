@@ -1,0 +1,59 @@
+{
+    "Activities": [
+        {
+            "Description": "Terminating EC2 instance: i-0e70a11d03e964114", 
+            "AutoScalingGroupName": "web-autoscaling-group", 
+            "ActivityId": "dc929fd6-b101-40b2-bb5c-5b88a0f0c773", 
+            "Details": "{\"Subnet ID\":\"subnet-04c613aa839707c18\",\"Availability Zone\":\"us-west-2b\",\"InvokingAlarms\":[{\"AlarmArn\":\"arn:aws:cloudwatch:us-west-2:977676195776:alarm:TargetTracking-web-autoscaling-group-AlarmLow-48df9fd2-4cc3-4495-a3d2-9ecd05f5370f\",\"Trigger\":{\"MetricName\":\"CPUUtilization\",\"EvaluateLowSampleCountPercentile\":\"\",\"ComparisonOperator\":\"LessThanThreshold\",\"TreatMissingData\":\"\",\"Statistic\":\"AVERAGE\",\"StatisticType\":\"Statistic\",\"Period\":60,\"EvaluationPeriods\":15,\"Unit\":null,\"Namespace\":\"AWS/EC2\",\"Threshold\":45},\"AlarmName\":\"TargetTracking-web-autoscaling-group-AlarmLow-48df9fd2-4cc3-4495-a3d2-9ecd05f5370f\",\"AlarmDescription\":\"DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:us-west-2:977676195776:scalingPolicy:e3eb216a-c7dd-46ed-b39f-b00333a0ef85:autoScalingGroupName/web-autoscaling-group:policyName/Keep this group at its initial size.\",\"AWSAccountId\":\"977676195776\",\"OldStateValue\":\"INSUFFICIENT_DATA\",\"Region\":\"US West (Oregon)\",\"NewStateValue\":\"ALARM\",\"StateChangeTime\":1615917905012}]}", 
+            "StartTime": "2021-03-16T18:05:18.161Z", 
+            "Progress": 100, 
+            "EndTime": "2021-03-16T18:11:07Z", 
+            "Cause": "At 2021-03-16T18:05:05Z a monitor alarm TargetTracking-web-autoscaling-group-AlarmLow-48df9fd2-4cc3-4495-a3d2-9ecd05f5370f in state ALARM triggered policy Keep this group at its initial size changing the desired capacity from 2 to 1.  At 2021-03-16T18:05:18Z an instance was taken out of service in response to a difference between desired and actual capacity, shrinking the capacity from 2 to 1.  At 2021-03-16T18:05:18Z instance i-0e70a11d03e964114 was selected for termination.", 
+            "StatusCode": "Successful"
+        }, 
+        {
+            "Description": "Launching a new EC2 instance: i-06d6ad85cf7eb9a13", 
+            "AutoScalingGroupName": "web-autoscaling-group", 
+            "ActivityId": "e5e5e0f0-c0c1-3a72-2980-1fb698518af4", 
+            "Details": "{\"Subnet ID\":\"subnet-0bf3c808c22b429fa\",\"Availability Zone\":\"us-west-2a\"}", 
+            "StartTime": "2021-03-16T17:58:14.350Z", 
+            "Progress": 100, 
+            "EndTime": "2021-03-16T17:58:46Z", 
+            "Cause": "At 2021-03-16T17:58:12Z an instance was started in response to a difference between desired and actual capacity, increasing the capacity from 1 to 2.", 
+            "StatusCode": "Successful"
+        }, 
+        {
+            "Description": "Terminating EC2 instance: i-0b25d86dd21cac83b", 
+            "AutoScalingGroupName": "web-autoscaling-group", 
+            "ActivityId": "9c25e0f0-bf62-6a50-49f5-31f38306a813", 
+            "Details": "{\"Subnet ID\":\"subnet-0bf3c808c22b429fa\",\"Availability Zone\":\"us-west-2a\"}", 
+            "StartTime": "2021-03-16T17:57:51.898Z", 
+            "Progress": 100, 
+            "EndTime": "2021-03-16T18:03:10Z", 
+            "Cause": "At 2021-03-16T17:57:51Z an instance was taken out of service in response to an EC2 health check indicating it has been terminated or stopped.", 
+            "StatusCode": "Successful"
+        }, 
+        {
+            "Description": "Launching a new EC2 instance: i-0e70a11d03e964114", 
+            "AutoScalingGroupName": "web-autoscaling-group", 
+            "ActivityId": "2d45e0f0-a1d6-fdbc-e06b-23f865c772d4", 
+            "Details": "{\"Subnet ID\":\"subnet-04c613aa839707c18\",\"Availability Zone\":\"us-west-2b\"}", 
+            "StartTime": "2021-03-16T17:49:47.839Z", 
+            "Progress": 100, 
+            "EndTime": "2021-03-16T17:50:20Z", 
+            "Cause": "At 2021-03-16T17:49:39Z a user request created an AutoScalingGroup changing the desired capacity from 0 to 2.  At 2021-03-16T17:49:45Z an instance was started in response to a difference between desired and actual capacity, increasing the capacity from 0 to 2.", 
+            "StatusCode": "Successful"
+        }, 
+        {
+            "Description": "Launching a new EC2 instance: i-0b25d86dd21cac83b", 
+            "AutoScalingGroupName": "web-autoscaling-group", 
+            "ActivityId": "c895e0f0-a1d4-d94f-a071-052806d61456", 
+            "Details": "{\"Subnet ID\":\"subnet-0bf3c808c22b429fa\",\"Availability Zone\":\"us-west-2a\"}", 
+            "StartTime": "2021-03-16T17:49:47.702Z", 
+            "Progress": 100, 
+            "EndTime": "2021-03-16T17:50:20Z", 
+            "Cause": "At 2021-03-16T17:49:39Z a user request created an AutoScalingGroup changing the desired capacity from 0 to 2.  At 2021-03-16T17:49:45Z an instance was started in response to a difference between desired and actual capacity, increasing the capacity from 0 to 2.", 
+            "StatusCode": "Successful"
+        }
+    ]
+}
